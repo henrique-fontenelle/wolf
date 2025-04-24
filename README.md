@@ -93,7 +93,7 @@ The method `allow_request?` just looks up the oldest timestamp and compares it t
 
 `record_request` and `allow_request?` both look up users in a hash indexed by user id. This is an amortized O(1) operation, although hash lookups technically have O(n) worst case performance if you just happen to get unlucky and all your items map to the same hash key.  For our purposes we'll call it O(1)
 
-The class as implemented should run into no performance issues since all methods are O(1) with respect to the number of requests. If you allowed out of order timestamps and used a red-black tree the `record_request` method would have O(log n) time complexity.
+The class as implemented should run into no performance issues since all methods are O(1) with respect to the number of requests and with respect to the number of users. If you allowed out of order timestamps and used a red-black tree the `record_request` method would have O(log n) time complexity.
 
 ### Test suite
 
