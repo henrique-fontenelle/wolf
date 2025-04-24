@@ -71,7 +71,7 @@ If timestamps do arrive in random order, we'd have to have some way of keeping t
 
 You could also just sort the list of MAX_TIMESTAMPS elements and drop the lowest, which despite sorting being O(n log n) is technically O(1) with respect to the numberof requests since MAX_TIMESTAMPS is a constant.
 
-Whether there is the possibility of an off-by-one error in the window logic. Is a request at t=30 allowed if the oldest request happened at t=0? Is the cutoff 30-0 or 30-0+1? This is a matter of personal taste, but in the `RateLimiter` class t=30 is allowed in this case.
+There is the possibility of an off-by-one error in the window logic. Is a request at t=30 allowed if the oldest request happened at t=0? Is the cutoff 30-0 or 30-0+1? This is a matter of personal taste, but in the `RateLimiter` class t=30 is allowed in this case.
 
 New users are initialized with 3 imaginary requests from Jan 1, 1970 (timestamp=0). It just makes the logic simpler and eliminates the need to deal with edge cases. The end result is the same.
 
