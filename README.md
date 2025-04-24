@@ -89,7 +89,7 @@ The algorithm used in `record_request` just pushes an item onto the end of an ar
 
 The algorithm is correct as long as timestamps come in order, and still correct if they don't because the method refuses to record the timestamp.
 
-The method `allow_request?` just looks up the oldest timestamp and compares it to the new timestamp and the 30 second limit. It's strickly O(1)
+The method `allow_request?` just looks up the oldest timestamp and compares it to the new timestamp and the 30 second limit. It's strictly O(1)
 
 `record_request` and `allow_request?` both look up users in a hash indexed by user id. This is an amortized O(1) operation, although hash lookups technically have O(n) worst case performance if you just happen to get unlucky and all your items map to the same hash key.  For our purposes we'll call it O(1)
 
