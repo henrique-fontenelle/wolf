@@ -1,5 +1,7 @@
 #Wolf - Ruby on Rails Staff Engineer Technical Assessment
+
 ##Algorithmic Challenge: Rate Limiter
+
 ###by Henrique
 
 Hi everybody at Wolf! This is my technical submission. Please let me know what you
@@ -125,7 +127,7 @@ from Jan 1, 1970 (timestamp=0). It just makes the
 logic simpler and eliminates the need to deal with
 edge cases. The end result is the same.
 
-# Memory usage
+### Memory usage
 
 In a real production system memory pools would be a concern.
 A memory pool is different from a memory leak in that
@@ -142,7 +144,7 @@ could store it in a NoSQL database and have it discard
 records that haven't been used in the last five minutes
 or so.
 
-# Time complexity
+### Time complexity
 
 The algorithm used in `record_request` just pushes
 an item onto the end of an array and drops the first
