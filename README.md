@@ -97,7 +97,7 @@ The class as implemented should run into no performance issues since all methods
 
 ### Test suite
 
-The test suite tests for various potential bugs such as users not being initialized with timestamps in the far past, one user's timestamps affecting another user, the time window not being computer correctly, and so on.
+The test suite tests for various potential bugs such as users not being initialized with timestamps in the far past, one user's timestamps affecting another user, the time window not being computed correctly, and so on.
 
 
 ### Thank you
