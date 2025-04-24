@@ -1,8 +1,8 @@
-#Wolf - Ruby on Rails Staff Engineer Technical Assessment
+# Wolf - Ruby on Rails Staff Engineer Technical Assessment
 
-##Algorithmic Challenge: Rate Limiter
+## Algorithmic Challenge: Rate Limiter
 
-###by Henrique
+### by Henrique
 
 Hi everybody at Wolf! This is my technical submission. Please let me know what you
 think.
